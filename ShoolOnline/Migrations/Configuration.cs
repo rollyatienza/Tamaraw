@@ -27,6 +27,43 @@ namespace ShoolOnline.Migrations
             //    );
             //
 
+            context.SO_Users.AddOrUpdate(
+                p => p.FirstName,
+                new SO_User
+                {            
+                    FirstName = "System",
+                    LastName = "Admin",
+                    Username = "administrator",
+                    password = "safadfasdf",
+                    passwordsalt ="1sdsdf",
+                    RoleID = 1,
+                    emailaddress = "rollyatienza@gmail.com",
+                    registrationcode = "ADMIN1",
+                    IsOnline = false,
+                    IsPaid = null,
+                    SubscriptionTypeID  = null,
+                    PaidDate = null,
+                    SubscriptionEndDate = null,
+                    AmountPaid = null
+                 },
+                new SO_User
+                {
+                    FirstName = "Rolly",
+                    LastName = "Atienza",
+                    Username = "blacksun",
+                    password = "safadfasdf",
+                    passwordsalt = "1sdsdf",
+                    RoleID = 1,
+                    emailaddress = "rollyatienza@gmail.com",
+                    registrationcode = "ADMIN1",
+                    IsOnline = false,
+                    IsPaid = null,
+                    SubscriptionTypeID = null,
+                    PaidDate = null,
+                    SubscriptionEndDate = null,
+                    AmountPaid = null
+                }
+                );
             context.SubscriptionTypes.AddOrUpdate(
                 p => p.SubscriptionName,
                 new SubscriptionType

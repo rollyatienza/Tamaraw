@@ -33,6 +33,8 @@ namespace ShoolOnline.Models
         public System.Data.Entity.DbSet<ShoolOnline.Models.Contact> Contacts { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<SubscriptionType> SubscriptionTypes { get; set; }
+        public DbSet<RegistrationCodes> RegistrationCodes { get; set; }
+        public DbSet<SO_User> SO_Users { get; set; }
         
     }
 }
